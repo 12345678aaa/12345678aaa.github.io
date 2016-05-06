@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+   <title>FT中文网正文页面练习</title>
+    <meta charset='utf-8'>
+   
+    
+    <style>
+    body {
+    background-color:lightblue ;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+
+/*网页居中容器样式设定*/
+
+#wrap {
+    margin: 0 auto;
+    height: 90px;
+    width: 970px;
+}
+
+
+/*顶部通栏广告样式设定*/
+
+.top-ad {
++    margin-bottom: 10px;
++}
+
+    margin-top: 3px;
+
+/*顶部导航条样式设定*/
+
+#nav {
+    border-bottom: 10px #9E2F50 solid;
+    padding-bottom: 10px;
+}
+
+#nav p {
+    color: #A7A59B;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+#nav img {
+    display: block;
+    width: 172px;
+    height: 36px;
+    float: left;
+}
+
+#nav div:last-child {
+    /*background-color: red;*/
+    float: right;
+}
+
+#nav div:last-child p {
+    text-align: right;
+}
+
+#nav h1 {
+    font-family: simhei;
+    font-size: 28px;
+    margin-top: 5px;
+    margin-left: 20px;
+    float: left;
+    font-weight: bold;
+   width: 150px; 
+text-shadow: 1px  1px 1px #ccc,
+                  0 0 10px orange,
+                   0 0 20px orange,
+                   0 0 30px orange,
+                   0 0 40px orange,
+                   0 0 70px orange,
+                   0 0 80px orange,
+                   0 0 100px orange,
+                   0 0 150px orange;
+				   
+	transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;	
+	-ms-transform-style: preserve-3d;			   
+	-o-transform-style: preserve-3d;			   
+
+   
+        animation: run  ease-in-out 9s infinite;
+   -moz-animation: run  ease-in-out 9s infinite ;	
+-webkit-animation: run  ease-in-out 9s infinite;	
+-ms-animation: run  ease-in-out 9s infinite;	
+
+     -o-animation: run  ease-in-out 9s infinite;}
+     @keyframes run {
+      0% {
+        transform:rotateX(-5deg) rotateY(0);	
+      }
+    50% {
+        transform:rotateX(0) rotateY(180deg);	
+		 text-shadow: 1px  1px 1px #ccc,
+                  0 0 10px #fff,
+                   0 0 20px #fff,
+                   0 0 30px #fff,
+                   0 0 40px #3EFF3E,
+                   0 0 70px #3EFFff,
+                   0 0 80px #3EFFff,
+                   0 0 100px #3EFFee,
+                   0 0 150px #3EFFee;
+                 
+      }
+      100% {
+        transform:rotateX(5deg) rotateY(360deg);	
+      }
+    }
+
+@-moz-keyframes run {
+      0% {
+        -moz-transform:rotateX(-5deg) rotateY(0);	
+
+      }
+    50% {
+        -moz-transform:rotateX(0) rotateY(180deg);	
+		 text-shadow: 1px  1px 1px #ccc,
+                  0 0 10px purple,
+                   0 0 20px purple,
+                   0 0 30px purple,
+                   0 0 40px purple,
+                   0 0 70px purple,
+                   0 0 80px purple,
+                   0 0 100px purple,
+                   0 0 150px purple;
+                 
+      }
+      100% {
+        -moz-transform:rotateX(5deg) rotateY(360deg);	
+      }
+    }
+
+@-webkit-keyframes run {
+      0% {
+        -webkit-transform:rotateX(-5deg) rotateY(0);	
+
+      }
+    50% {
+        -webkit-transform:rotateX(0) rotateY(180deg);	
+		 text-shadow: 1px  1px 1px #ccc,
+                  0 0 10px #fff,
+                   0 0 20px #fff,
+                   0 0 30px #fff,
+                   0 0 40px #3EFF3E,
+                   0 0 70px #3EFFff,
+                   0 0 80px #3EFFff,
+                   0 0 100px #3EFFee,
+                   0 0 150px #3EFFee;
+                 
+      }
+      100% {
+        -webkit-transform:rotateX(5deg) rotateY(360deg);	
+      }
+    }
+@-ms-keyframes run {
+      0% {
+        -ms-transform:rotateX(-5deg) rotateY(0);	
+
+      }
+    50% {
+        -ms-transform:rotateX(0) rotateY(180deg);	
+		
+      }
+      100% {
+        -ms-transform:rotateX(5deg) rotateY(360deg);	
+      }
+    }
+
+
+#nav p a {
+    color: #4D8BB8;
+    text-decoration: none;
+}
+
+#nav form p {
+    float: left;
+}
+
+.menu ul {
+    background-color: lightgray;
+}
+
+.menu li {
+    display: block;
+    float: left;
+    width: 97px;
+    height: 24px;
+    text-align: center;
+    line-height: 24px;
+    font-size: 14px;
+}
+
+.menu a {
+    color: black;
+    /*display: block;*/
+    text-decoration: none;
+    padding: 1px;
+}
+
+.menu a:hover {
+    color: white;
+    background-color: #A7A59B;
+    border: 1px #A7A59B solid;
+    border-radius: 5px;
+}
+
+
+/*主体部分样式*/
+
+.left {
+    width: 620px;
+    float: left;
+    border-right: 1px #F6E9D8 solid;
+    padding-right: 10px;
+    margin-top: 10px;
+}
+
+.aside {
+    width: 339px;
+    float: left;
+}
+
+.published-time {
+   color: #9E2F50;
+    margin: 18px 0;
+    font-weight: bold;
+}
+
+.left h1 {
+    font-size: 25px;
+    font-family: "Microsoft Yahei", "monospace";
+    font-weight: bold;
+   margin-bottom: 15px;
+}
+
+.author {
+    color: #A7A59B;
+   font-size: 17px;
+   font-weight: bold;
+}
+
+.bdsharebuttonbox {
+    float: right;
+}
+
+.content p {
+    text-indent: 2em;
+    font-size: 17px;
+    line-height: 1.5;
+   margin: 8px 0;
+}
+
+.content .first-p {
+    text-indent: 0;
+}
+
+.first-p:first-letter {
+    color: block;
+    font-size: 48px;
+    display: block;
+    float: left;
+    margin: 0 8px 8px 0;
+}
+
+.content p.img {
+    text-align: center;
+    text-indent: 0;
+}
+.aside-ad {
+    width: 320px;
+   height: 270px;
+    background-color: red;
+    padding-top: 10px;
+   position: relative;
+   resize: vertical;
+    overflow: auto;
+    text-align: center;
+}
+
+.aside-ad img {
+    display: block;
+    position: absolute;
+    
+    resize: vertical;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+.aside-ad img {transform: rotate(0 0);}
+
+.aside-ad img:hover{transform: rotate(720deg); }
+.letter{clear: both;
+margin: 0 1px 1px;
+border-top: 8px solid orange;
+overflow: hidden;}
+	
+ ol{list-style-type: upper-roman;
+ 	list-style-position: inside;
+ 	line-height: 32px;
+ 	text-align: center;}
+ 	.more-topics {
+    float: right;
+    font-size: 14px;}
+  #footer ul li a {
+    color: red;
+    margin: 0 0 0 .20em;
+    font-size: 14px;
+    line-height: 1;
+    padding:0 0 0 10em;
+}  #footer span {
+    color: #999;
+    font-size: 14px;
+    line-height: 1;
+}
+#only img{text-shadow: 1px  1px 1px #ccc,
+                  0 0 10px orange,
+                   0 0 20px orange,
+                   0 0 30px orange,
+                   0 0 40px orange,
+                   0 0 70px orange,
+                   0 0 80px orange,
+                   0 0 100px orange,
+                   0 0 150px orange;
+				   
+	transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;	
+	-ms-transform-style: preserve-3d;			   
+	-o-transform-style: preserve-3d;			   
+
+   
+        animation: run  ease-in-out 9s infinite;
+   -moz-animation: run  ease-in-out 9s infinite ;	
+-webkit-animation: run  ease-in-out 9s infinite;	
+-ms-animation: run  ease-in-out 9s infinite;	
+
+     -o-animation: run  ease-in-out 9s infinite;}
+     @keyframes run {
+      0% {
+        transform:rotateX(-5deg) rotateY(0);	
+      }
+    50% {
+        transform:rotateX(0) rotateY(180deg);	
+		 text-shadow: 1px  1px 1px #ccc,
+                  0 0 10px #fff,
+                   0 0 20px #fff,
+                   0 0 30px #fff,
+                   0 0 40px #3EFF3E,
+                   0 0 70px #3EFFff,
+                   0 0 80px #3EFFff,
+                   0 0 100px #3EFFee,
+                   0 0 150px #3EFFee;
+                 
+      }
+      100% {
+        transform:rotateX(5deg) rotateY(360deg);	
+      }
+    }
+
+@-moz-keyframes run {
+      0% {
+        -moz-transform:rotateX(-5deg) rotateY(0);	
+
+      }
+    50% {
+        -moz-transform:rotateX(0) rotateY(180deg);	
+		 text-shadow: 1px  1px 1px #ccc,
+                  0 0 10px purple,
+                   0 0 20px purple,
+                   0 0 30px purple,
+                   0 0 40px purple,
+                   0 0 70px purple,
+                   0 0 80px purple,
+                   0 0 100px purple,
+                   0 0 150px purple;
+                 
+      }
+      100% {
+        -moz-transform:rotateX(5deg) rotateY(360deg);	
+      }
+    }
+
+@-webkit-keyframes run {
+      0% {
+        -webkit-transform:rotateX(-5deg) rotateY(0);	
+
+      }
+    50% {
+        -webkit-transform:rotateX(0) rotateY(180deg);	
+		 text-shadow: 1px  1px 1px #ccc,
+                  0 0 10px #fff,
+                   0 0 20px #fff,
+                   0 0 30px #fff,
+                   0 0 40px #3EFF3E,
+                   0 0 70px #3EFFff,
+                   0 0 80px #3EFFff,
+                   0 0 100px #3EFFee,
+                   0 0 150px #3EFFee;
+                 
+      }
+      100% {
+        -webkit-transform:rotateX(5deg) rotateY(360deg);	
+      }
+    }
+@-ms-keyframes run {
+      0% {
+        -ms-transform:rotateX(-5deg) rotateY(0);	
+
+      }
+    50% {
+        -ms-transform:rotateX(0) rotateY(180deg);	
+		
+      }
+      100% {
+        -ms-transform:rotateX(5deg) rotateY(360deg);	
+      }
+    }
+
+
+  
+
+
+    </style>
+
+
+
+</head>
+
+<body>
+
+    <div id="wrap">
+        <div class="top-ad"><img src="ad.png" alt="广告"></div>
+       <div id="nav" class="clearfix">
+            <div>
+                <p>2016年4月26日 发布</p>
+               <marquee><img src="logoHD.gif" alt="ft中文网标记"></marquee>
+                <h1>中国经济</h1>
+            </div>
+            <div>
+                <p>
+                    <span><a href="#">新手指南</a></span>                    <span>登录</span>
+                    <span>注册</span>
+                </p>
+                <form action="#">
+                    <p>
+                        <input type="text" name="" id="">
+                    </p>
+                    <p>
+                        <input type="radio" name="文章" id="">文章</p>
+                    <p>
+                        <input type="radio" name="日期" id="">日期</p>
+                    <p>
+                        <input type="submit" value="搜索">
+                    </p>
+                </form>
+           </div>
+        </div>
+        <div class="menu">
+            <ul class="clearfix">
+                <li><a href="#">首页</a></li>
+                <li><a href="#">中国</a></li>
+                <li><a href="#">全球</a></li>
+                <li><a href="#">经济</a></li>
+                <li><a href="#">金融市场</a></li>
+                <li><a href="#">商业</a></li>
+                <li><a href="#">观点</a></li>
+                <li><a href="#">管理</a></li>
+                <li><a href="#">生活时尚</a></li>
+                <li><a href="#">视频</a></li>
+            </ul>
+        </div>
+        <div id="main">
+            <div class="left">
+                <div class="published-time">2016年5月2日 19：30</div>
+                <h1>对中国经济前景的不同解读</h1>
+                <p class="author">英国《金融时报》 白杰明 香港报道</p>
+                <div class="clearfix">
+                    <div class="bdsharebuttonbox">
+                        <a href="#" class="bds_more" data-cmd="more"></a>
+                        <a title="分享到QQ空间" href="#" class="bds_qzone" data-cmd="qzone"></a>
+                        <a title="分享到新浪微博" href="#" class="bds_tsina" data-cmd="tsina"></a>
+                       <a title="分享到腾讯微博" href="#" class="bds_tqq" data-cmd="tqq"></a>
+                        <a title="分享到人人网" href="#" class="bds_renren" data-cmd="renren"></a>
+                        <a title="分享到微信" href="#" class="bds_weixin" data-cmd="weixin"></a>
+                    </div>
+                    <script>
+                    window._bd_share_config = {
+                        "common": {
+                           "bdSnsKey": {},
+                           "bdText": "",
+                            "bdMini": "2",
+                            "bdMiniList": false,
+                            "bdPic": "",
+                            "bdStyle": "0",
+                            "bdSize": "16"
+                        },
+                        "share": {},
+                        "image": {
+                            "viewList": ["qzone", "tsina", "tqq", "renren", "weixin"],
+                            "viewText": "分享到：",
+                            "viewSize": "16"
+                        },
+                        "selectShare": {
+                            "bdContainerClass": null,
+                            "bdSelectMiniList": ["qzone", "tsina", "tqq", "renren", "weixin"]
+                        }
+                   };
+                    with(document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+                    </script>
+                </div>
+                <div class="content">
+                    <p class="img"><img src="meiguo.jpg" alt="中美划船图片"></p>
+                    <p class="first-p"><code><i>大</i>约一百年前的一天，毛润之刚放弃图书馆的工作回到家乡长沙，孙文还在上海的寓所闭门思索实业救国的计划。京城晚春初降，景山牡丹盛开，漫天柳絮作雪飞，赵家楼胡同的曹宅浓烟滚滚，尚在东交民巷的谢婉莹，好奇地聆听着窗外学生们震耳欲聋的呐喊声。就在如此稀松平常的一天，对中国现代化影响深远的“五四运动”爆发了。</p>
+                    <p>俄罗斯、文莱、柬埔寨、老挝和俄罗斯几国的政府除了都对参与式民主没兴趣之外，还有什么共同之处呢？ 中国政府宣布上述政府最近都站出来支持其在南中国海的立场，称它们支持自己的观点，包括海上纠纷应通过双边协商解决，以及菲律宾对中国的领土主张提出的仲裁案是不合法的。 此事绝非偶然。菲律宾提出的仲裁案预计将在数月内得出裁决。北京方面正努力说服其他国家相信，海牙仲裁法庭无权对中国的主张作出裁决。 近几周来，深谋远虑的中国外长王毅一直以充沛的精力拜访同行，访问了文莱、柬埔寨和老挝，意图分化东南亚对中国的态度。</p>
+                    <p>在中国大陆，“五四”作为无产阶级革命史上的一个重要节点，被视为中国共产党成立的前奏。而在两蒋时代的台湾，“五四”与新文化运动之间的联系被谨慎分开，爱国与民族精神成为“五四”仅有的内容。到了马英九执政后，国民党纪念“五四”的重心则转到了民主和科学的价值传承。</p>
+                    <p>其实，“五四”的意义不仅仅局限于中国史的范畴，它在将中国民族主义与反日情绪正式连通的同时，也是中美关系史上的分水岭之一。而且，“五四”也生动记录了美国在实现外部崛起前的一次意识形态挣扎。特别地，在如今美国陷入衰落迷思、特朗普掀起孤立主义风潮之际，本文对“五四”时代的重访，不仅是对美国外交及其意识形态百年轮回的回顾，而且对于尚在外交上“作为与少作为”之间犹疑的中国而言，也是一次与美国经验的对话和比较。</p>
+                    <p>抛开当时帝国主义的时代性质，一些史学家认为，“五四”的引燃与美国总统威尔逊的外交失手关联甚大。一战结束后，期盼公理战胜强权的中国人对巴黎和会寄予厚望，以崇尚民族平等与自决著称的威尔逊尤受尊重。然而，威尔逊终究在英法的要挟下妥协，巴黎和会决定将青岛转让日本，这个消息让中国陷入极度沮丧。
+                   </p>
+                   <p>其实可以这么说，当时的中国和威尔逊都是美国孤立主义的受害者。在威尔逊任总统之前，传统、封闭的共和党人已连续掌管了三届白宫，而在参众两院，从19世纪末到罗斯福上任前，共和党长期占据着压倒性的优势。当时，凭借左右两个大洋构筑的地理屏障，加上经济和军事崛起带来的满足和安全感，多数美国人对深度介入（Deep Engagement）亚欧大陆的险恶政治并无太多兴趣。孤立主义的意识形态自然地主导着当时的美国外交</code></p>
+               </div>
+                <!-- 多说评论框 start -->
+                <div class="ds-thread" data-thread-key="3860bd9141025e6e9bb745f95eedd4d4" data-title="请替换成文章的标题" data-url="请替换成文章的网址">
+                </div>
+                <!-- 多说评论框 end -->
+                <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+                <script type="text/javascript">
+               var duoshuoQuery = {
+                    short_name: "adamyang2006"
+                };
+                (function() {
+                    var ds = document.createElement('script');
+                    ds.type = 'text/javascript';
+                    ds.async = true;
+                    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+                    ds.charset = 'UTF-8';
+                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
+                })();
+               </script>
+                <!-- 多说公共JS代码 end --><img src="am.gif" alt="广告图片" />
+
+           </div>
+            <div class="aside">
+                <div class="aside-ad"><img src="ningboforum.jpg" hspace="10" alt="宁波论坛"></div>
+               <div id="line" class=letter></div>
+                <h3>
+                <a target="_blank">你可能喜欢</a>
+                </h3>
+                <div class="data" style="display:block">
+                <p style="color:orange"><marquee>暂时没有为您推荐的文章，请坚持阅读的好习惯！</marquee></p>
+                </div>
+                <div id="line" class=letter>
+                
+                </div>
+
+            </div>
+
+            <div id="article">
+            	<h3 id="hot">十大热门文章</h3>
+            	 <ol  style=color:red;class="wen">
+            	 	<li><a target="_blank" href="#">全球的中心已经转向亚洲</a></li>
+            	 	<li><a target="_blank" href="#">中国经济基础复苏并不牢靠</a></li>
+            	 	<li><a target="_blank" href="#">记录真实的悲喜中国</a></li>
+            	 	<li><a target="_blank" href="#">红酒新世界的中国课题</a></li>
+            	 	<li><a target="_blank" href="#">对“九段线”裁决后续影响的预测</a></li>
+            	 	<li><a target="_blank" href="#">“债务清算日”并非遥不可及 </a></li>
+            	 	<li><a target="_blank" href="#">腾讯从中国移动支付大战中后撤 </a></li>
+            	 	<li><a target="_blank" href="#">百度搜索可以视同广告吗？ </a></li>
+            	 	<li><a target="_blank" href="#">中国债务问题如何收场？ </a></li>
+            	 	<li><a target="_blank" href="#">看不见的中国 </a></li>
+            	 	<li><a target="_blank" href="#">A股的“中国式”投资策略 </a></li>
+            	 	<a class=more-topics href="#">更多排行榜</a>
+                        <br></br>
+
+
+            	 </ol>
+            	 
+            	 </div>
+
+
+            	  
+            </div>
+             <div id="underline">
+            	 	
+            	 	<hr  size="12" color="green" align="left"></hr>
+            	 </div>
+            	 <div id="img1">
+            	 <img src="300250.gif" alt="图片" hspace="10" />
+</div>
+<hr  size="12" color="green" align="left"></hr>
+<div id="site" class="one">
+<div title="谢谢对我们的支持">FT中文网客户端</div>
+<img src="http://static.ftchinese.com/img/qr/qr90-2.png" alt="客户端图片" />
+<img src=http://i.ftimg.net/picture/3/000032703_piclink_73_90.jpg  width="90" height="90" hspace="70" align="right" /><div align="center"><tt>扫一扫关注我们</tt></div>
+<div align="center"><tt>点击或扫描下载</tt></div>
+<hr  size="12" color="green" align="left"></hr>
+ <div id="only">
+        	<img src="mony.jpg" alt="meiyuan" hspace="10" >
+        </div>
+
+</div>
+        </div> <div id="line" class=letter></div>
+        
+
+       
+        <div id="footer">
+        	<div id="footer-content">
+        	<ul>
+   
+        	<li>
+        	<a href="#">关于我们</a>
+        	<a href="#">加入我们</a>
+        	<a href="#">联系方式</a>
+        	<a href="#">问题反馈</a>
+        	<a href="#">合作伙伴</a>
+        	<a href="#">服务条款</a>
+        	<a href="#">版权声明</a>
+        	<a href="#">最新动态</a>
+        	<a href="#">广告业务</a>
+        	
+        	</li>
+        	</ul>
+        	<span><strong>© The Financial Times Ltd 2016 FT and 'Financial Times' are trademarks of The Financial Times Ltd.</strong> </span>
+        </div>
+        
+    </div>
+</body>
+
+</html>
